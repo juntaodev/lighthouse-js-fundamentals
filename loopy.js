@@ -1,13 +1,19 @@
-let number;
+const fizzbuzz = () => {
 
-for (number = 100; number <=200; number++){
-  if( number % 3 === 0 && number % 4 === 0){
-    console.log("LoopyLighthouse")
-  }else if(number % 3 === 0){
-    console.log("Loopy")
-  }else if(number % 4 === 0){
-    console.log("Lighthouse")
-  }else{
-    console.log(number)
+  for (let number = 100; number <= 200; number++) {
+
+    let output = "";
+
+    if (number % 3 === 0) {
+      output += "Loopy";
+    }
+    if (number % 4 === 0) {
+      output += "Lighthouse";
+    }
+
+    console.log(output === "" ? number : output);
+   
   }
-}
+};
+
+fizzbuzz();
